@@ -15,3 +15,7 @@ A register/login website that never stores passwords in plain text, and locks ac
 - **Constant-time comparison:** prevents timing-based attacks
 
 ## How to run it locally
+streamlit run secure_login.py
+
+## Explanation for review
+Built a login system using salted PBKDF2 password hashing instead of plain text storage, plus account lockout after repeated failed attempts to defend against brute-force attacks — the same core techniques used by real authentication systems.
